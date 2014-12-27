@@ -28,6 +28,14 @@ layout: default
             weatherblob = weatherstring + temp + " degrees F.";
     }
 
+    $.getJSON(s3url, function(data) {
+           s3function(data);
+    })
+
+    function s3function() {
+         console.log(data);
+    }
+
     window.onload = function() {
 
 
