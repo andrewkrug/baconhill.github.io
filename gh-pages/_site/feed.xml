@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bacon Hill Kitchen Window</title>
+    <description>This is the view from my kitchen window using a Raspberry Pi B+ and nothing more.</description>
+    <link>http://baconhill.house/</link>
+    <atom:link href="http://baconhill.house/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sat, 27 Dec 2014 14:08:43 -0800</pubDate>
+    <lastBuildDate>Sat, 27 Dec 2014 14:08:43 -0800</lastBuildDate>
+    <generator>Jekyll v2.2.0</generator>
+    
+      <item>
+        <title>Welcome to Bacon Hill Kitchen!</title>
+        <description>&lt;p&gt;The view out my kitchen window is so beautiful.  I’ve decided to create a site to just host only that and maybe some time lapses from the Pi I’m using to take these great pics.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+</description>
+        <pubDate>Fri, 26 Dec 2014 07:01:27 -0800</pubDate>
+        <link>http://baconhill.house/update/2014/12/26/welcome-to-jekyll/</link>
+        <guid isPermaLink="true">http://baconhill.house/update/2014/12/26/welcome-to-jekyll/</guid>
+        
+        
+        <category>update</category>
+        
+      </item>
+    
+  </channel>
+</rss>

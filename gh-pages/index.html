@@ -4,7 +4,45 @@ layout: default
 
 <div class="home">
 
-  <h1>Posts</h1>
+    <img src="https://s3-us-west-2.amazonaws.com/baconkitchen/new-current.jpg" class="img-responsive" alt="Current View width="608" height="472"">
+
+
+    <script>
+    var weatherurl = "http://api.openweathermap.org/data/2.5/weather?q=Ashland,OR";
+    var s3url = "https://s3-us-west-2.amazonaws.com/baconkitchen/object.json";
+    $.getJSON(weatherurl, function(data) {
+           weatherfunction(data);
+    })
+    var weatherstring = "The temprature in Ashland, OR is currently ";
+
+
+    var weatherblob;
+
+    function weatherfunction(data) {
+            console.log(data);
+            var tempk = (data.main.temp);
+            var temp = ((tempk - 273.15)*1.8 + 32);
+            temp = Math.round( temp );
+            temp = temp.toString();
+
+            weatherblob = weatherstring + temp + " degrees F.";
+    }
+
+    window.onload = function() {
+
+
+
+       //when the document is finished loading, replace everything
+       //between the <a ...> </a> tags with the value of splitText
+       document.getElementById("weathernotice").innerHTML=weatherblob;
+    }
+
+    </script>
+
+    <p id="weathernotice"></p>
+
+
+    <h3>Updates</h3>
 
   <ul class="posts">
     {% for post in site.posts %}
